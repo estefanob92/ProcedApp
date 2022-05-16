@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background-color: #140014;
+  color: white;
+}
+
+body header #contenedorTop {
+  margin-bottom: 10px;
+}
+
+body header #contenedorTop h1 {
+  display: inline-block;
+}
+
+body header #contenedorTop #bandaCotizaciones {
+  background-color: black;
+  display: none;
+  /* width:60%; */
+  margin-left: 40px;
+  color: green;
+  text-align: center;
+}
+
+body header #contenedorHeader {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+body #contenedorRegistro {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4e014e), to(#c902c9));
+  background-image: linear-gradient(to bottom, #4e014e, #c902c9);
+  margin: auto;
+  padding: 10px;
+  border-radius: 3%;
+  width: 35%;
+  /* margin: 10px; */
+}
+
+body #contenedorRegistro p {
+  margin-bottom: 20px;
+}
+
+body #contenedorRegistro #advertencia {
+  display: none;
+  color: yellow;
+  margin-top: 10px;
+}
+
+body #contenedorRegistro #contenedorInputsRegistro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+body #contenedorRegistro #contenedorInputsRegistro input {
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+}
+
+body #contenedorRegistro #contenedorInputsRegistro button {
+  width: 90px;
+}
+
+body #contenedorBilletera {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #contenedorBilletera .card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4e014e), to(#c902c9));
+  background-image: linear-gradient(to bottom, #4e014e, #c902c9);
+  border-radius: 3%;
+  margin: 7px;
+  padding: 10px;
+  /* width: 460px; 
+            height: 235px; */
+  width: 40%;
+  height: 220px;
+}
+
+body #contenedorBilletera .cardMiCuenta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta {
+  /* height: 70%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #estadoDeCuenta {
+  font-size: 25px;
+}
+
+body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorTransferir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorTransferir input {
+  margin: 3px;
+}
+
+body #contenedorBilletera .cardContactos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #contenedorBilletera .cardContactos #botoneraContactos #contenedorBuscar, body #contenedorBilletera .cardContactos #botoneraContactos #contenedorEliminar, body #contenedorBilletera .cardContactos #botoneraContactos #contenedorAgregar {
+  margin-top: 15px;
+}
+
+body #contenedorBilletera .cardContactos #contenedorContactos {
+  overflow: auto;
+}
+
+body #contenedorBilletera .cardContactos #contenedorContactos .contacto {
+  font-size: 13px;
+  margin-left: 20px;
+  /* width: 50%; */
+  border-bottom: solid 1px #a107a1;
+}
+
+body #contenedorBilletera .cardContactos #contenedorContactos .encontrado {
+  font-size: 13px;
+  margin-left: 20px;
+  width: 50%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#180118), to(purple));
+  background-image: linear-gradient(to right, #180118, purple);
+}
+
+body #contenedorBilletera .cardMovimientos {
+  overflow: auto;
+}
+
+body #contenedorBilletera .cardMovimientos #listadoMovimientos {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+body #contenedorBilletera .cardMovimientos #listadoMovimientos .movimiento {
+  color: lightgrey;
+  border-bottom: solid 1px purple;
+}
+
+body #contenedorBilletera .cardOtros #contenedorElementosOtros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #contenedorBilletera .cardBeneficios {
+  width: 80%;
+  height: 340px;
+}
+
+body #contenedorBilletera .cardBeneficios #contenedorBeneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #contenedorDatosUsuario {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4e014e), to(#c902c9));
+  background-image: linear-gradient(to bottom, #4e014e, #c902c9);
+  border-radius: 3%;
+  margin: auto;
+  padding: 10px;
+  width: 460px;
+  height: 235px;
+}
+
+body #contenedorDatosUsuario div {
+  border-bottom: solid 1px purple;
+}
+
+#contenedorIngresar, #contenedorRetirar, #contenedorTransferir {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contenedorBuscar, #contenedorAgregar, #contenedorEliminar {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+button {
+  background-color: white;
+  color: #36032a;
+  font-weight: bold;
+  border: solid 1px purple;
+  padding: 4px;
+}
+
+button:active {
+  background-color: purple;
+  color: white;
+  -webkit-box-shadow: black 1px 1px 1px 1px;
+          box-shadow: black 1px 1px 1px 1px;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+#inputTransferirMonto, #inputIngresarDinero, #inputRetirarDinero {
+  width: 115px;
+}
+
+@media (max-width: 700px) {
+  body #contenedorRegistro {
+    width: 100%;
+  }
+  body #contenedorBilletera .card {
+    width: 90%;
+  }
+  body #contenedorDatosUsuario {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

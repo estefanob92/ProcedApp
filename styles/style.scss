@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    //border: solid 1px grey; 
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+body{
+    background-color: rgb(20, 0, 20);
+    color: white;
+    header{
+        #contenedorTop{
+            margin-bottom: 10px;
+            h1{
+                display: inline-block;
+            }
+            #bandaCotizaciones{
+                background-color: black;
+                display: none;
+                /* width:60%; */
+                margin-left: 40px;
+                color: green;
+                text-align: center;
+            }
+        }
+        #contenedorHeader{
+            display: none;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+    }
+    #contenedorRegistro{
+        background-image: linear-gradient(to bottom, rgb(78, 1, 78) , rgb(201, 2, 201));
+        margin: auto;
+        padding: 10px;
+        border-radius: 3%;
+        width: 35%; 
+        /* margin: 10px; */
+        p{
+            margin-bottom: 20px;
+        }
+        #advertencia{
+            display: none;
+            color: yellow;
+            margin-top: 10px;
+        }
+        #contenedorInputsRegistro{
+            display: flex;
+            flex-flow: column nowrap;
+            input{
+                width: 200px;
+                height: 30px;
+                margin: 10px;
+            }
+            button{
+                width: 90px;
+            }
+        }
+    }
+    #contenedorBilletera{
+        display: none;
+        flex-flow: row wrap;
+        justify-content: center;
+        .card{
+            background-image: linear-gradient(to bottom, rgb(78, 1, 78) , rgb(201, 2, 201));
+            //border: solid 1px white;
+            border-radius: 3%;
+            margin: 7px;
+            padding: 10px;
+            /* width: 460px; 
+            height: 235px; */  
+            width: 40%;
+            height: 220px;
+        }
+        .cardMiCuenta{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            #elementosCardMiCuenta{
+                #estadoDeCuenta{
+                    font-size: 25px;
+                }
+                #contenedorTransferir{
+                    display: flex;
+                    flex-flow: row wrap;
+                    input{
+                        margin: 3px;
+                    }
+                }
+                /* height: 70%; */
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+            }
+        }
+        .cardContactos{
+            #botoneraContactos{
+                #contenedorBuscar, #contenedorEliminar, #contenedorAgregar{
+                    margin-top: 15px;
+                }
+            }
+            #contenedorContactos{
+                overflow: auto;
+                .contacto{
+                    font-size: 13px;
+                    margin-left: 20px;
+                    /* width: 50%; */
+                    border-bottom: solid 1px rgb(161, 7, 161) ;
+                }
+                .encontrado{
+                    font-size: 13px;
+                    margin-left: 20px;
+                    width: 50%;
+                    background-image: linear-gradient(to right, rgb(24, 1, 24) , purple);    
+                }
+            }
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+        }
+        .cardMovimientos{
+            overflow: auto;
+            #listadoMovimientos{
+                margin-left: 20px;
+                margin-top: 10px;
+                font-size: 13px;
+                .movimiento{
+                    color: lightgrey;
+                    //width: 80%;
+                    border-bottom: solid 1px purple;
+                }
+            }
+        }
+        .cardOtros{
+            #contenedorElementosOtros{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+            }
+        }
+        .cardBeneficios{
+            width: 80%;
+            height: 340px; 
+            #contenedorBeneficios{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+        
+    }
+    #contenedorDatosUsuario{
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom, rgb(78, 1, 78) , rgb(201, 2, 201));
+        border-radius: 3%;
+        margin: auto;
+        padding: 10px;
+        width: 460px; 
+        height: 235px;
+        div{
+            border-bottom: solid 1px purple;
+        }
+    }
+}
+    
+
+// Desplegables
+//Desplegables card MiCuenta
+#contenedorIngresar, #contenedorRetirar, #contenedorTransferir{
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+//Desplegables card MisContactos
+#contenedorBuscar, #contenedorAgregar, #contenedorEliminar{
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+// Botones
+button{
+    background-color: white;
+    color: rgb(54, 3, 42);
+    font-weight: bold;
+    border: solid 1px purple;
+    padding: 4px;
+}
+button:active{
+    background-color: purple;
+    color: white;
+    box-shadow: black 1px 1px 1px 1px;
+    transition: 0.01s;
+
+}
+
+//inputs de monto 
+#inputTransferirMonto, #inputIngresarDinero, #inputRetirarDinero{
+    width: 115px;
+}
+
+// Pantalla mobile
+@media (max-width: 700px){
+    body{
+      //background-color: yellow; 
+      #contenedorRegistro{
+          width: 100%;
+      }
+      #contenedorBilletera{
+          .card{ 
+            width: 90%;
+          }
+      }
+      #contenedorDatosUsuario{
+          width: 90%;
+      } 
+    }
+
+}
+
+

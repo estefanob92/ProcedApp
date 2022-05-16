@@ -1,0 +1,8 @@
+ [
+    {"marca": "Burger King", "id": "1", "producto": "combos", "descuento":"30%"},
+    {"marca": "Farmacity", "id": "2", "producto": "articulos de perfmueria", "descuento":"40%"},
+    {"marca": "Freddo", "id": "3", "producto": "1kg de helado", "descuento":"2x1"},
+    {"marca": "Cinepolis", "id": "4", "producto": "funciones", "descuento":"2x1"},
+    {"marca": "Havanna", "id": "5", "producto": "caja de alfajores", "descuento":"50%"},
+    {"marca": "Sony", "id": "6", "producto": "auriculares", "descuento":"20%"}
+ ]
