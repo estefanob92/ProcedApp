@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <title>ProcedApp</title>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div id="contenedorTop">
+            <h1>ProcedApp</h1>
+            <p id="bandaCotizaciones"> >>>> banda movil de cotizaciones >>>> </p>
+        </div>
+        <div id="contenedorHeader">
+            <h2 id="saludaUsuario">Bienvenido</h2>
+            <button id="btnMisDatos">Mis Datos</button>
+        </div>
+    </header>
+
+    <!-- Menu de registro -->
+    <div id="contenedorRegistro">
+        <h2>Bienvenido!</h2>
+        <p>Regístrese y conózca ProcedApp</p>
+        <div id="contenedorInputsRegistro">
+            <input id="inputRegistroNombre" type="text" name="nombre" placeholder="nombre">
+            <input id="inputRegistroApellido" type="text" name="apellido" placeholder="apellido">
+            <input id="inputRegistroDNI" type="number" name="dni" placeholder="dni">
+            <input id="inputRegistroEdad" type="number" name="edad" placeholder="edad">
+            <button id="btnRegistro">Registrar</button>
+        </div>
+        <p id="advertencia">Complete sus datos para ingresar</p>
+    </div>
+
+    <!-- Contenedor de los datos del usuario -->
+    <div id="contenedorDatosUsuario">
+        <span id="ocultarDatosUsuario"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+        <div id="mostrarDatiosUsuarioNombre"></div>
+        <div id="mostrarDatiosUsuarioApellido"></div>
+        <div id="mostrarDatiosUsuarioDNI"></div>
+        <div id="mostrarDatiosUsuarioEdad"></div>
+    </div>
+
+    <!-- Billetera -->
+    <div id="contenedorBilletera">
+        <div id="cardMiCuenta" class="card cardMiCuenta">
+            <h2>Mi Cuenta</h2>
+            <div id="elementosCardMiCuenta">
+                <span id="estadoDeCuenta">$0</span>
+                <div>
+                    <button id="ingresar">Ingresar $</button>
+                    <button id="retirar" >Retirar $</button>
+                    <button id="transferir">Transferir $</button>
+                </div>
+                <!-- oculto ingresar-->
+                <div id="contenedorIngresar">
+                    <input id="inputIngresarDinero" type="number" placeholder="monto a ingresar">
+                    <button id="okIngresarDinero">ok</button>
+                    <button class="reset">reset</button>
+                    <span id="oculta"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+                </div>
+                <!-- fin oculto -->
+                <!-- oculto retirar-->
+                <div id="contenedorRetirar">
+                    <input id="inputRetirarDinero" type="number" placeholder="monto a retirar">
+                    <button id="okRetirarDinero">ok</button>
+                    <button class="reset">reset</button>
+                    <span id="oculta2"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+                </div>
+                <!-- fin oculto -->
+                <!-- oculto trasnferir-->
+                <div id="contenedorTransferir">
+                    <input id="inputTransferirMonto" type="number" placeholder="monto a transferir">
+                    <input id="inputTransferirContacto" type="text" placeholder="click sobre el contacto">
+                    <button id="okTransferirDinero">ok</button>
+                    <button class="reset">reset</button>
+                    <span id="oculta3"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+                </div>
+                <!-- fin oculto -->
+            </div>
+        </div>
+        <div class="card cardMovimientos">
+            <h2>Mis Movimientos</h2>
+            <div id="listadoMovimientos">
+            </div>
+        </div>
+        <div class="card cardContactos">
+            <h2>Mis Contactos</h2>
+            <div id="contenedorContactos">
+            </div>
+            <div id="botoneraContactos">
+                <button id="buscar">Buscar</button>
+                <button id="agregar">Agregar</button>
+                <button id="eliminar">Eliminar</button>
+
+                <!-- oculto buscar-->
+                <div id="contenedorBuscar">
+                    <input id="inputBuscarContacto" type="text" placeholder="busca un contacto">
+                    <button id="okBuscar">ok</button>
+                    <button class="reset">reset</button>
+                    <span id="ocultaBuscar"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+                </div>
+                <!-- fin oculto -->
+                <!-- oculto agregar-->
+                <div id="contenedorAgregar">
+                    <input id="inputAgregarContacto" type="text" placeholder="agrega un contacto">
+                    <button id="okAgregar">ok</button>
+                    <button class="reset">reset</button>
+                    <span id="ocultaAgregar"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+                </div>
+                <!-- fin oculto -->
+                <!-- oculto eliminar-->
+                <div id="contenedorEliminar">
+                    <input id="inputEliminarContacto" type="text" placeholder="elimina un contacto">
+                    <button id="okEliminar">ok</button>
+                    <button class="reset">reset</button>
+                    <span id="ocultaEliminar"><img src="/img/cancel.png" class="iconoCerrar" alt="icono cerrar"></span>
+                </div>
+                <!-- fin oculto -->
+            </div>
+        </div>
+        <div class="card cardOtros">
+            <h2>Otros</h2>
+            <div id="contenedorElementosOtros">
+                <div id="cantidadContactos"></div>
+                <div id="beneficios">beneficios</div>
+                <div>otra cosa</div>
+            </div>
+        </div>
+        <div class="card cardBeneficios">
+            <h2>Beneficios</h2>
+            <div id="contenedorBeneficios">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/js/misElementos.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
