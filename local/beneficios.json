@@ -1,8 +1,8 @@
  [
-    {"marca": "Burger King", "id": "1", "producto": "combos", "descuento":"30%"},
-    {"marca": "Farmacity", "id": "2", "producto": "articulos de perfmueria", "descuento":"40%"},
-    {"marca": "Freddo", "id": "3", "producto": "1kg de helado", "descuento":"2x1"},
-    {"marca": "Cinepolis", "id": "4", "producto": "funciones", "descuento":"2x1"},
-    {"marca": "Havanna", "id": "5", "producto": "caja de alfajores", "descuento":"50%"},
-    {"marca": "Sony", "id": "6", "producto": "auriculares", "descuento":"20%"}
+    {"marca": "Burger King", "id": "1", "producto": "Todos los combos", "descuento":"30% off", "img":"img/burger.png"},
+    {"marca": "Farmacity", "id": "2", "producto": "Artículos de perfumeria", "descuento":"40% off", "img":"img/farmacity.png"},
+    {"marca": "Coderhouse", "id": "3", "producto": "Todos los cursos", "descuento":"30% off", "img":"img/coder.png"},
+    {"marca": "Cinepolis", "id": "4", "producto": "Todas las funciones", "descuento":"2x1", "img":"img/cinepolis.jpg"},
+    {"marca": "Havanna", "id": "5", "producto": "Cajas de alfajores clásicos", "descuento":"50% off", "img":"img/havanna.jpg"},
+    {"marca": "Sony", "id": "6", "producto": "Auriculares bluetooth", "descuento":"20% off", "img":"img/sony.png"}
  ]

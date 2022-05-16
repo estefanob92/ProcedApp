@@ -196,6 +196,10 @@ body #contenedorBilletera .cardMovimientos #listadoMovimientos .movimiento {
   border-bottom: solid 1px purple;
 }
 
+body #contenedorBilletera .cardOtros {
+  display: none;
+}
+
 body #contenedorBilletera .cardOtros #contenedorElementosOtros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +214,9 @@ body #contenedorBilletera .cardOtros #contenedorElementosOtros {
 
 body #contenedorBilletera .cardBeneficios {
   width: 80%;
-  height: 340px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 body #contenedorBilletera .cardBeneficios #contenedorBeneficios {
@@ -224,6 +230,10 @@ body #contenedorBilletera .cardBeneficios #contenedorBeneficios {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body #contenedorBilletera .cardBeneficios #contenedorBeneficios img, body #contenedorBilletera .cardBeneficios #contenedorBeneficios p {
+  margin: 3px;
 }
 
 body #contenedorDatosUsuario {

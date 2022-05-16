@@ -133,6 +133,7 @@ body{
             }
         }
         .cardOtros{
+            display: none;
             #contenedorElementosOtros{
                 display: flex;
                 flex-flow: row nowrap;
@@ -141,11 +142,15 @@ body{
         }
         .cardBeneficios{
             width: 80%;
-            height: 340px; 
+            height: fit-content;
             #contenedorBeneficios{
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
+                img,p{
+                    margin: 3px;
+
+                }
             }
         }
         

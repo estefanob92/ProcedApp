@@ -602,7 +602,8 @@ function muestroBeneficios (){
     .then( (data) => {
         data.forEach((cadaBeneficio) => {
             const li = document.createElement('div');
-            li.innerHTML = `<h3>${cadaBeneficio.marca}</h3><p>${cadaBeneficio.producto}</p><p>${cadaBeneficio.descuento}</p>`;
+            li.className = "listaDeBeneficios";
+            li.innerHTML = `<img src="${cadaBeneficio.img}" width="110px" alt="logo"><p>${cadaBeneficio.producto}</p><p>${cadaBeneficio.descuento}</p>`;
             contenedorBeneficios.append(li);
         }
         )
@@ -611,7 +612,6 @@ function muestroBeneficios (){
 // vacío los inputs
 function reseteoCampos(){
     const resetButtons = document.getElementsByClassName("reset");
-    console.log(resetButtons);
 
     for(const el of resetButtons){
         el.addEventListener("click",()=>{
@@ -632,7 +632,7 @@ function reseteoCampos(){
 // PARA AGREGAR...
 
     //prioritarios:
-        // 0) subir a github
+        // ok 0) subir a github
         // ok 1) contactos agregados y eliminados se guardan en memoria y se recuperan
         // ok 2) contactos recuperados de la memoria se usan para transferencias
         // ok 2.bis) contactos recien agregados (con o sin memoria) no se estan pudiendo usar para transf
@@ -640,11 +640,10 @@ function reseteoCampos(){
         // ok 4) reset de todos los inputs con boton reset
         // ok 5) si abro un desplegable se cierra el otro
         // 6) prohibir saldos negativos
-        // 7) completar con alguna otra info la card Otros
-        // 8) imagenes y prolijidad a los elementosdel fetch
-        // 9) indicar al usuario que debe hacer click en el input de transferencia para seleccionar un contacto
+        // ok 8) imagenes y prolijidad a los elementosdel fetch
+        // ok 9) indicar al usuario que debe hacer click en el input de transferencia para seleccionar un contacto
         // 10) simplificar codigo (optimizarlo y agrupar funciones por tematica)
-        // 11) mobile responsive
+        // ok 11) mobile responsive
 
     //Otros:    
         // ok - dar formato a los botones

@@ -24,7 +24,6 @@ let dinero=0;
 let recuperoDinero = JSON.parse(localStorage.getItem("dinero"));
 let movimiento;
 let contacto;
-//estee
 let agregaContacto;
 
 
