@@ -597,7 +597,7 @@ function contactosUsuario (){
 }
 // Muestro Beneficios (fetch)
 function muestroBeneficios (){
-    fetch('/local/beneficios.json')
+    fetch('local/beneficios.json')
     .then( (res) => res.json())
     .then( (data) => {
         data.forEach((cadaBeneficio) => {
