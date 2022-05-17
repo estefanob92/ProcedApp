@@ -53,7 +53,7 @@ function registroInicial(){
         contenedorRegistro.style.display="none";
         contenedorBilletera.style.display="flex";
         contenedorHeader.style.display="flex";
-        bandaCotizaciones.style.display="inline-block";
+        //bandaCotizaciones.style.display="inline-block";
 
         saludoUsuario(recuperoDatosUsuario.nombre);
 

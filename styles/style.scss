@@ -77,12 +77,14 @@ body{
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-around;
+            #estadoDeCuenta{
+                font-size: 25px;
+            }
             #elementosCardMiCuenta{
-                #estadoDeCuenta{
-                    font-size: 25px;
-                }
-                #contenedorTransferir{
-                    display: flex;
+
+                #contenedorTransferir,#contenedorIngresar, #contenedorRetirar{
+                    margin-top: 20px;
+                    //display: flex;
                     flex-flow: row wrap;
                     input{
                         margin: 3px;
@@ -148,7 +150,9 @@ body{
                 flex-flow: row wrap;
                 justify-content: space-between;
                 img,p{
-                    margin: 3px;
+                    margin-left: auto;
+                    margin-right: auto;
+
 
                 }
             }
@@ -167,6 +171,13 @@ body{
         height: 235px;
         div{
             border-bottom: solid 1px purple;
+        }
+        span{
+            margin-left: 92%;
+        }
+        h2{
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

@@ -115,6 +115,10 @@ body #contenedorBilletera .cardMiCuenta {
       justify-content: space-around;
 }
 
+body #contenedorBilletera .cardMiCuenta #estadoDeCuenta {
+  font-size: 25px;
+}
+
 body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta {
   /* height: 70%; */
   display: -webkit-box;
@@ -128,21 +132,15 @@ body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta {
       justify-content: space-around;
 }
 
-body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #estadoDeCuenta {
-  font-size: 25px;
-}
-
-body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorTransferir {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorTransferir, body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorIngresar, body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorRetirar {
+  margin-top: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
 
-body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorTransferir input {
+body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorTransferir input, body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorIngresar input, body #contenedorBilletera .cardMiCuenta #elementosCardMiCuenta #contenedorRetirar input {
   margin: 3px;
 }
 
@@ -233,7 +231,8 @@ body #contenedorBilletera .cardBeneficios #contenedorBeneficios {
 }
 
 body #contenedorBilletera .cardBeneficios #contenedorBeneficios img, body #contenedorBilletera .cardBeneficios #contenedorBeneficios p {
-  margin: 3px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body #contenedorDatosUsuario {
@@ -255,6 +254,15 @@ body #contenedorDatosUsuario {
 
 body #contenedorDatosUsuario div {
   border-bottom: solid 1px purple;
+}
+
+body #contenedorDatosUsuario span {
+  margin-left: 92%;
+}
+
+body #contenedorDatosUsuario h2 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contenedorIngresar, #contenedorRetirar, #contenedorTransferir {
