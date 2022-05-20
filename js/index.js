@@ -627,31 +627,6 @@ function reseteoCampos(){
 }
 
 
-
-
-// PARA AGREGAR...
-
-    //prioritarios:
-        // ok 0) subir a github
-        // ok 1) contactos agregados y eliminados se guardan en memoria y se recuperan
-        // ok 2) contactos recuperados de la memoria se usan para transferencias
-        // ok 2.bis) contactos recien agregados (con o sin memoria) no se estan pudiendo usar para transf
-        // ok parcialmente 3) validaciones con operadores ternarios
-        // ok 4) reset de todos los inputs con boton reset
-        // ok 5) si abro un desplegable se cierra el otro
-        // 6) prohibir saldos negativos
-        // ok 8) imagenes y prolijidad a los elementosdel fetch
-        // ok 9) indicar al usuario que debe hacer click en el input de transferencia para seleccionar un contacto
-        // 10) simplificar codigo (optimizarlo y agrupar funciones por tematica)
-        // ok 11) mobile responsive
-
-    //Otros:    
-        // ok - dar formato a los botones
-        
-
-
-
-
 registroInicial();
 botonMisDatos ();
 desplegables ();
